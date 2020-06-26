@@ -32,4 +32,7 @@ enum events
 	MAX_EVENTS_SIZE
 };
 
+
+void State_Update(void);
+
 #endif /* INC_STATE_MACHINE_H_ */
