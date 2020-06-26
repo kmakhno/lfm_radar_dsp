@@ -1,0 +1,6 @@
+core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+spi.c:17:6:SPI_Init	4	static
+spi.c:52:6:SPI_Write	16	static
+spi.c:79:6:SPI_ReadWrite	24	static
+spi.c:104:6:SPI_Read	16	static
+spi.c:150:6:SPI_Wait	4	static

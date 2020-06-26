@@ -1,0 +1,4 @@
+state_machine.c:37:6:State_Machine	16	static
+state_machine.c:54:6:Set_Signal	16	static
+state_machine.c:60:14:Get_Signal	4	static
+state_machine.c:65:13:Get_CurrentState	4	static

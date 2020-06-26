@@ -1,0 +1,2 @@
+timer.c:13:6:Timer_Init	4	static
+timer.c:42:6:Timer_Start	4	static

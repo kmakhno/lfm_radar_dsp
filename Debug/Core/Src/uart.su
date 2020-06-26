@@ -1,0 +1,2 @@
+uart.c:21:6:UART_Init	4	static
+uart.c:40:6:UART_SendByte	16	static

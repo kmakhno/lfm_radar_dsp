@@ -1,0 +1,5 @@
+core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+adc.c:11:6:ADC_Init	8	static
+adc.c:58:6:ADC_DMA_Init	16	static
+adc.c:73:6:ADC_DMA_Enable	4	static
+adc.c:80:6:ADC_DMA_Disable	4	static
