@@ -10,36 +10,26 @@
 
 enum states
 {
-	IDLE_STATE = 0,
-	START_CONVERSION_STATE,
-	START_SENDING_STATE,
+	IDLE_STATE,
+	PREPARE_TO_CONV_STATE,
+	START_CONV_STATE,
+	END_CONV_STATE,
+	DATA_TRANSFER_STATE,
 
-	MAX_STATES
+	MAX_STATES_SIZE
 };
 
-
-enum signals
+enum events
 {
-	TO_IDLE_SIG = 0,
-	START_CONVERSION_SIG,
-	START_SENDING_SIG,
-	STOP_SENDING_SIG,
+	IDLE_EVENT,
+	PREPARE_TO_CONV_EVENT,
+	START_CONV_EVENT,
+	END_CONV_EVENT,
+	REPEAT_CONV_EVENT,
+	START_DATA_TRANSFER_EVENT,
+	END_DATA_TRANSFER_EVENT,
 
-	MAX_SIGNALS
+	MAX_EVENTS_SIZE
 };
-
-typedef void (*transition_callback)(enum states state, enum signals signal);
-
-struct transition
-{
-	enum states new_state;
-	transition_callback worker;
-};
-
-
-enum signals Get_Signal(void);
-void Set_Signal(enum signals signal);
-void State_Machine(void);
-enum states Get_CurrentState(void);
 
 #endif /* INC_STATE_MACHINE_H_ */

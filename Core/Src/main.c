@@ -101,18 +101,13 @@ int main(void)
   //ADC_Init();
   MX_SPI1_Init();
   UART_Init();
-  printf("Current state %d\r\n", Get_CurrentState());
   /* USER CODE BEGIN 2 */
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int s = 0;
   while (1)
   {
-	  State_Machine();
-	  for (int i = 0; i < 60000; i++);
-	  Set_Signal(++s%4);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
